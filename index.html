@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dersleri</title>
+    <!--Element yazmak istiyosak elementi (h1) id ile yazcaksak '#' i . class ile yazcaksak ifadeyi '.bir' kullanırız-->
+    <style>
+
+        *{
+            /*Sayfanın tüm yazı fontunu değiştirmek*/
+            font-family: Lato;
+        }
+        .bir{
+            color: blue;
+            background-color: yellow;
+            text-align: left;
+        }
+
+        .iki{
+            color: red;
+            background-color: yellow;
+            text-align: center;
+        }
+
+        .uc{
+            color: green;
+            background-color: yellow;
+            text-align: right;
+        }
+
+        .dort{
+            color:aqua ;
+            background-color: yellow;
+           
+        }
+
+        /*-h1'in kenarlık ve kalınlıklarını ayarladık*/
+        h1{
+            border: 10px solid gray;
+            border-width: 10px;
+            border-style: double;
+            border-color:red;
+            padding:5px ; /*içe doğru boşluk bırakmak */
+            margin: 5px;/*dışa doğru boşluk bırakmak */
+            margin-right: 5px; /*sağa doğru boşluk bırakmak */
+            margin-left: 5px; /*sola doğru boşluk bırakmak */
+            text-align: center; /*yazılar ortalanır*/
+            border-radius:30px ; /*kenarlara ovallik verir*/
+            line-break: anywhere; /*sayfa genişliğine uyar div içerisinden çıkmaz*/
+        }
+
+        #alan{
+            padding: 20px;
+            border: 5px dotted black;
+            width: 50%;
+        }
+
+        .img{
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+
+        button:hover{ /*hover:Üstüne geldiğinde ne olsn*/
+            background-color: yellow !important;
+            color: gray !important;
+        }
+
+        .yatay{
+            max-width: 600px;
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid grey;
+            border-radius: 15px;
+
+        }
+
+        .sagalan{
+            margin-top: 1rem;
+        }
+
+        .yatay2{
+            max-width: 800px;
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid grey;
+            border-radius: 15px;
+            display: flex; /*resim solda yazı yanında*/
+
+        }
+
+        .sagalan2{
+            margin-left: 1rem;
+        }
+
+        #butonum{
+            font-size: 1rem;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px dotted blue;
+            background-color: gray;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="yatay">
+        <div class="solalan">
+            <img style="width: 100%; border-radius: 1rem;" src="kopek2.jpg" >
+
+        </div>
+        <div>
+            <h2>Yazının Başlığı</h2>
+        </div>
+        <div class="sagalan">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore corporis laborum consectetur voluptatum soluta, minima quos quod fugit dignissimos! Quam fugiat inventore distinctio veniam provident voluptas quae facilis deserunt? Culpa.
+
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <button type="button">Devamını Oku...</button>
+
+    </div>
+
+
+    <div class="yatay2">
+        <div class="solalan2">
+            <img style="width: auto; height: 100%; max-height: 200px; border-radius: 1rem;" src="kopek2.jpg" >
+
+        </div>
+        
+        <div class="sagalan2">
+            <h3>Yazının Başlığı</h3>
+            <p> ipsum dolor, sit inima quos quod fugit dignissimos! Quam fugiat inventore distinctio veniam provident voluptas quae facilis deserunt? Culpa.
+            </p>
+            <button id="butonum" type="button">Devamını Oku...</button>
+        </div>
+    </div>
+
+    <br><br><br>
+
+
+    <a href="https://google.com">
+        <button style="
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+            width: 25%;
+            color: black;
+            background-color: transparent;
+            line-break: anywhere;
+        
+        " type="button">Butonumuz</button>
+    </a>
+    <br><br>
+
+    <div id="alan">
+        <h1 class="bir">Merhaba CSS Derslerine Hoşgeldiniz</h1>
+        <h1 class="iki">Merhaba CSS Derslerine Hoşgeldiniz</h1>
+        <h1 class="uc">Merhaba CSS Derslerine Hoşgeldiniz</h1>
+        <h1 class="dort">Merhaba CSS Derslerine Hoşgeldiniz</h1>
+    </div>
+
+<img class="img" src="kopek2.jpg">
+
+</body>
+</html>
